@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Docs - QuantumCraft Studios
+title: Docs
 hero:
   text: La documentation officielle de l'hébergeur QuantumCraft Studios
   tagline: ""

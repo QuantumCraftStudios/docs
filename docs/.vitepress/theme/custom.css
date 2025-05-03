@@ -1,0 +1,103 @@
+/* ======= Couleurs VitePress en thème clair ======= */
+:root {
+  --vp-c-brand: #2e7ccb;
+  --vp-c-brand-light: #5292d8;
+  --vp-c-brand-dark: #1e549d;
+
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-alt: #f9f9f9;
+  --vp-c-text: #1f1f1f;
+  --vp-c-text-light: #666;
+
+  --vp-radius: 10px;
+  --vp-code-font-size: 95%;
+  --vp-font-family-base: 'Inter', system-ui, sans-serif;
+}
+
+/* ======= Thème sombre ======= */
+.dark {
+  --vp-c-brand: #2e7ccb;
+  --vp-c-brand-dark: #152954;
+  --vp-c-brand-light: #81fbf9;
+
+  --vp-c-bg: #121212;
+  --vp-c-bg-alt: #1e1e1e;
+  --vp-c-text: #f0f0f0;
+  --vp-c-text-light: #a9a9a9;
+}
+
+/* ======= Style des liens du menu (sidebar) avec icônes personnalisées ======= */
+[class^="style_"] .VPLink.link {
+  position: relative;
+  padding-left: 2em;
+}
+
+[class^="style_"] .VPLink.link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0.5em;
+  transform: translateY(-50%);
+  width: 1em;
+  height: 1em;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Spécifique à chaque icône */
+.style_sparkles .VPLink.link::before {
+  background-image: url('/docs/docs/img/sidebar/sparkles.png');
+}
+
+.style_booktext .VPLink.link::before {
+  background-image: url('/docs/img/sidebar/booktext.png');
+}
+
+.style_webhook .VPLink.link::before {
+  background-image: url('/docs/img/sidebar/webhook.png');
+}
+
+.style_route .VPLink.link::before {
+  background-image: url('/docs/img/sidebar/route.png');
+}
+
+.style_log .VPLink.link::before {
+  background-image: url('/docs/img/sidebar/log.png');
+}
+
+.style_settings .VPLink.link::before {
+  background-image: url('/docs/img/sidebar/settings.png');
+}
+
+.style_command .VPLink.link::before {
+  background-image: url('/docs/img/sidebar/command.png');
+}
+
+.style_feather .VPLink.link::before {
+  background-image: url('/docs/img/sidebar/feather.png');
+}
+
+.style_start .VPLink.link::before {
+  background-image: url('/docs/img/sidebar/start.png');
+}
+
+.style_album .VPLink.link::before {
+  background-image: url('/docs/img/sidebar/album.png');
+}
+
+.style_replace .VPLink.link::before {
+  background-image: url('/docs/img/sidebar/replace.png');
+}
+
+.VPButton.brand {
+  background-color: #d67845 !important; /* couleur de fond */
+  color: #fff !important;               /* couleur du texte */
+  padding: 0.6em 1.5em;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.VPButton.brand:hover {
+  background-color: #e08a5c !important; /* couleur au survol */
+}
